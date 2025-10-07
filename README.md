@@ -17,7 +17,7 @@ It transforms raw marketing data into actionable insights that help optimize cam
 ## 🧠 Dashboard Insights
 
 ### 🪩 **Campaign Performance**
-![Campaign Performance](Images/Campaign_Performance.png)
+![Campaign Performance](Images/campaign_performance.png)
 
 - **Campaign 6** achieved the highest purchase count (334) and sales revenue (₹0.33M).  
 - **Wine** emerged as the top-selling product with ₹681K in revenue, followed by **Meat (₹374K)**.  
@@ -27,7 +27,7 @@ It transforms raw marketing data into actionable insights that help optimize cam
 ---
 
 ### 👩‍💼 **Buyer Composition**
-![Buyer Composition](Images/Buyer_Composition.png)
+![Buyer Composition](Images/buyer_composition.png)
 
 - Total customers analyzed: **2.24K**  
 - Average income: **₹52.25K** | Average age: **57.19 years**  
@@ -39,7 +39,7 @@ It transforms raw marketing data into actionable insights that help optimize cam
 ---
 
 ### 💡 **Purchase Drivers**
-![Purchase Drivers](Images/Purchase_Drivers.png)
+![Purchase Drivers](Images/purchase_drivers.png)
 
 - Customers with **income > ₹60,585** are **7.8× more likely** to accept Campaign 1.  
 - **Low monthly web visits (0–1)** correlate with **higher total sales**, suggesting bulk buyers or loyal customers.  
@@ -49,7 +49,7 @@ It transforms raw marketing data into actionable insights that help optimize cam
 ---
 
 ## 📐 Data Model & Schema
-![Data Model](Images/Data_Model.png)
+![Data Model](Images/data_model.png)
 
 The project follows a **star schema** to optimize analytical performance and simplify DAX calculations.
 
@@ -81,9 +81,3 @@ Power Query was used for cleaning and shaping the data, while DAX measures (ROI,
 
 ---
 
-## 📈 Key DAX Measures
-```DAX
-Total Revenue = SUM(Sales[Amount])
-ROI = (SUM(Sales[Revenue]) - SUM(Sales[Spend])) / SUM(Sales[Spend])
-Conversion Rate = DIVIDE(Total Purchases, Total Reach, 0)
-Avg Income = AVERAGE(marketmindz_research[Income])
